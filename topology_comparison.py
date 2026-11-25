@@ -33,7 +33,7 @@ def connected_after_failure(edges, n, broken):
     return len(seen.intersection(range(n))) == n
 
 def main():
-    n = 6
+    n = 5
     for kind in ("bus", "ring", "star", "mesh"):
         e = links(kind, n)
         vertices = set(x for edge in e for x in edge)
